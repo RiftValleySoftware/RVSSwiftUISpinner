@@ -23,16 +23,16 @@
 
 import SwiftUI
 
-struct RVS_SwiftUISpinner_Test_Harness_ContentView: View {
+struct RVS_SwiftUISpinner: View {
     var body: some View {
-        RVS_SwiftUISpinner()
+        Text(/*@START_MENU_TOKEN@*/"Hello World!"/*@END_MENU_TOKEN@*/)
     }
 }
 
 #if DEBUG
-struct RVS_SwiftUISpinner_Test_Harness_ContentView_Previews: PreviewProvider {
+struct RVS_SwiftUISpinner_Previews: PreviewProvider {
     static var previews: some View {
-        RVS_SwiftUISpinner_Test_Harness_ContentView()
+        RVS_SwiftUISpinner()
     }
 }
 #endif

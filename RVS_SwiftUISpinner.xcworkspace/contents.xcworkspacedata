@@ -23,9 +23,6 @@
       location = "group:LICENSE">
    </FileRef>
    <FileRef
-      location = "group:.nojekyll">
-   </FileRef>
-   <FileRef
       location = "group:RVS_SwiftUISpinner.xcodeproj">
    </FileRef>
    <FileRef

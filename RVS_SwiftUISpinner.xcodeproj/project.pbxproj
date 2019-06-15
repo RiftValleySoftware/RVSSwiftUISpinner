@@ -10,6 +10,7 @@
 		D49940E622B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49940E322B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift */; };
 		D49940E722B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49940E422B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift */; };
 		D49940E822B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49940E522B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift */; };
+		D4AC707022B55B8F00C04559 /* RVS_SwiftUISpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AC706F22B55B8F00C04559 /* RVS_SwiftUISpinner.swift */; };
 		D4CCA0DB22B52E2400FF2F35 /* RVS_SwiftUISpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = D4CCA0D922B52E2400FF2F35 /* RVS_SwiftUISpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D4CCA0EE22B52EA600FF2F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CCA0ED22B52EA600FF2F35 /* Assets.xcassets */; };
 		D4CCA0F122B52EA600FF2F35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CCA0F022B52EA600FF2F35 /* Preview Assets.xcassets */; };
@@ -17,12 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		107EF8F9D8B7CCA7A0D59852 /* Pods-RVS_SwiftUISpinner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RVS_SwiftUISpinner.release.xcconfig"; path = "Target Support Files/Pods-RVS_SwiftUISpinner/Pods-RVS_SwiftUISpinner.release.xcconfig"; sourceTree = "<group>"; };
-		51D1C9F85D447AFEA5C43852 /* Pods-RVS_SwiftUISpinner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RVS_SwiftUISpinner.debug.xcconfig"; path = "Target Support Files/Pods-RVS_SwiftUISpinner/Pods-RVS_SwiftUISpinner.debug.xcconfig"; sourceTree = "<group>"; };
-		CE0307C05F43DF3FF2361F9B /* libPods-RVS_SwiftUISpinner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RVS_SwiftUISpinner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49940E322B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_AppDelegate.swift; sourceTree = "<group>"; };
 		D49940E422B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift; sourceTree = "<group>"; };
 		D49940E522B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_ContentView.swift; sourceTree = "<group>"; };
+		D4AC706F22B55B8F00C04559 /* RVS_SwiftUISpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner.swift; sourceTree = "<group>"; };
 		D4CCA0D622B52E2400FF2F35 /* RVS_SwiftUISpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RVS_SwiftUISpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4CCA0D922B52E2400FF2F35 /* RVS_SwiftUISpinner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RVS_SwiftUISpinner.h; sourceTree = "<group>"; };
 		D4CCA0DA22B52E2400FF2F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -48,18 +47,8 @@
 		609AB57BCCF74FA30BE01150 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CE0307C05F43DF3FF2361F9B /* libPods-RVS_SwiftUISpinner.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A29560EAECDCB3E7CE7AEB1F /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				51D1C9F85D447AFEA5C43852 /* Pods-RVS_SwiftUISpinner.debug.xcconfig */,
-				107EF8F9D8B7CCA7A0D59852 /* Pods-RVS_SwiftUISpinner.release.xcconfig */,
-			);
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		D4CCA0CC22B52E2400FF2F35 = {
@@ -68,7 +57,6 @@
 				D4CCA0D822B52E2400FF2F35 /* RVS_SwiftUISpinner */,
 				D4CCA0E622B52EA500FF2F35 /* RVS_SwiftUISpinner Test Harness */,
 				D4CCA0D722B52E2400FF2F35 /* Products */,
-				A29560EAECDCB3E7CE7AEB1F /* Pods */,
 				609AB57BCCF74FA30BE01150 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -85,6 +73,7 @@
 		D4CCA0D822B52E2400FF2F35 /* RVS_SwiftUISpinner */ = {
 			isa = PBXGroup;
 			children = (
+				D4AC706F22B55B8F00C04559 /* RVS_SwiftUISpinner.swift */,
 				D4CCA0D922B52E2400FF2F35 /* RVS_SwiftUISpinner.h */,
 				D4CCA0DA22B52E2400FF2F35 /* Info.plist */,
 			);
@@ -99,8 +88,8 @@
 				D49940E522B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift */,
 				D4CCA0ED22B52EA600FF2F35 /* Assets.xcassets */,
 				D4CCA0F222B52EA600FF2F35 /* LaunchScreen.storyboard */,
-				D4CCA0F522B52EA600FF2F35 /* Info.plist */,
 				D4CCA0F922B52F5A00FF2F35 /* RVS_SwiftUISpinner Test Harness-Bridging-Header.h */,
+				D4CCA0F522B52EA600FF2F35 /* Info.plist */,
 				D4CCA0EF22B52EA600FF2F35 /* Preview Content */,
 			);
 			path = "RVS_SwiftUISpinner Test Harness";
@@ -276,6 +265,7 @@
 				D49940E822B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift in Sources */,
 				D49940E722B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift in Sources */,
 				D49940E622B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift in Sources */,
+				D4AC707022B55B8F00C04559 /* RVS_SwiftUISpinner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +405,6 @@
 		};
 		D4CCA0DF22B52E2400FF2F35 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51D1C9F85D447AFEA5C43852 /* Pods-RVS_SwiftUISpinner.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -440,7 +429,6 @@
 		};
 		D4CCA0E022B52E2400FF2F35 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 107EF8F9D8B7CCA7A0D59852 /* Pods-RVS_SwiftUISpinner.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
