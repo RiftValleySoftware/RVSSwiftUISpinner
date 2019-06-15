@@ -95,8 +95,8 @@
 			isa = PBXGroup;
 			children = (
 				D49940E322B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift */,
-				D49940E522B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift */,
 				D49940E422B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift */,
+				D49940E522B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift */,
 				D4CCA0ED22B52EA600FF2F35 /* Assets.xcassets */,
 				D4CCA0F222B52EA600FF2F35 /* LaunchScreen.storyboard */,
 				D4CCA0F522B52EA600FF2F35 /* Info.plist */,
