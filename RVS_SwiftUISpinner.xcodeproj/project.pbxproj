@@ -17,9 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D40B2FD822B533EE005F5DF5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
-		D40B2FD922B533EE005F5DF5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D40B2FDA22B533EE005F5DF5 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		107EF8F9D8B7CCA7A0D59852 /* Pods-RVS_SwiftUISpinner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RVS_SwiftUISpinner.release.xcconfig"; path = "Target Support Files/Pods-RVS_SwiftUISpinner/Pods-RVS_SwiftUISpinner.release.xcconfig"; sourceTree = "<group>"; };
+		51D1C9F85D447AFEA5C43852 /* Pods-RVS_SwiftUISpinner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RVS_SwiftUISpinner.debug.xcconfig"; path = "Target Support Files/Pods-RVS_SwiftUISpinner/Pods-RVS_SwiftUISpinner.debug.xcconfig"; sourceTree = "<group>"; };
+		CE0307C05F43DF3FF2361F9B /* libPods-RVS_SwiftUISpinner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RVS_SwiftUISpinner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49940E322B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_AppDelegate.swift; sourceTree = "<group>"; };
 		D49940E422B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift; sourceTree = "<group>"; };
 		D49940E522B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_ContentView.swift; sourceTree = "<group>"; };
@@ -35,13 +35,6 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D4CCA0D322B52E2400FF2F35 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D4CCA0E222B52EA500FF2F35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -52,15 +45,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		609AB57BCCF74FA30BE01150 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE0307C05F43DF3FF2361F9B /* libPods-RVS_SwiftUISpinner.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A29560EAECDCB3E7CE7AEB1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51D1C9F85D447AFEA5C43852 /* Pods-RVS_SwiftUISpinner.debug.xcconfig */,
+				107EF8F9D8B7CCA7A0D59852 /* Pods-RVS_SwiftUISpinner.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D4CCA0CC22B52E2400FF2F35 = {
 			isa = PBXGroup;
 			children = (
-				D40B2FD822B533EE005F5DF5 /* icon.png */,
-				D40B2FDA22B533EE005F5DF5 /* LICENSE */,
-				D40B2FD922B533EE005F5DF5 /* README.md */,
 				D4CCA0D822B52E2400FF2F35 /* RVS_SwiftUISpinner */,
 				D4CCA0E622B52EA500FF2F35 /* RVS_SwiftUISpinner Test Harness */,
 				D4CCA0D722B52E2400FF2F35 /* Products */,
+				A29560EAECDCB3E7CE7AEB1F /* Pods */,
+				609AB57BCCF74FA30BE01150 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -124,8 +133,8 @@
 			buildConfigurationList = D4CCA0DE22B52E2400FF2F35 /* Build configuration list for PBXNativeTarget "RVS_SwiftUISpinner" */;
 			buildPhases = (
 				D4CCA0D122B52E2400FF2F35 /* Headers */,
+				D4E2E47B22B53B3600D06BCF /* SwiftLINT */,
 				D4CCA0D222B52E2400FF2F35 /* Sources */,
-				D4CCA0D322B52E2400FF2F35 /* Frameworks */,
 				D4CCA0D422B52E2400FF2F35 /* Resources */,
 			);
 			buildRules = (
@@ -141,6 +150,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D4CCA0F622B52EA600FF2F35 /* Build configuration list for PBXNativeTarget "RVS_SwiftUISpinner Test Harness" */;
 			buildPhases = (
+				D4E2E47C22B53B6900D06BCF /* SwiftLINT */,
 				D4CCA0E122B52EA500FF2F35 /* Sources */,
 				D4CCA0E222B52EA500FF2F35 /* Frameworks */,
 				D4CCA0E322B52EA500FF2F35 /* Resources */,
@@ -211,6 +221,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D4E2E47B22B53B3600D06BCF /* SwiftLINT */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLINT;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -f \"${PROJECT_DIR}/Pods/SwiftLint/swiftlint\"; then\n    \"${PROJECT_DIR}/Pods/SwiftLint/swiftlint\"\nfi\n";
+		};
+		D4E2E47C22B53B6900D06BCF /* SwiftLINT */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLINT;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if test -f \"${PROJECT_DIR}/Pods/SwiftLint/swiftlint\"; then\n    \"${PROJECT_DIR}/Pods/SwiftLint/swiftlint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D4CCA0D222B52E2400FF2F35 /* Sources */ = {
@@ -366,6 +415,7 @@
 		};
 		D4CCA0DF22B52E2400FF2F35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51D1C9F85D447AFEA5C43852 /* Pods-RVS_SwiftUISpinner.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -390,6 +440,7 @@
 		};
 		D4CCA0E022B52E2400FF2F35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 107EF8F9D8B7CCA7A0D59852 /* Pods-RVS_SwiftUISpinner.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

@@ -1,0 +1,6 @@
+xcodebuild_arguments:
+    - "-project"
+    - "RVS_SwiftUISpinner.xcodeproj"
+    - "-scheme"
+    - "RVS_SwiftUISpinner"
+    
