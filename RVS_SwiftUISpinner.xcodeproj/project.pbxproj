@@ -17,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D40B2FD822B533EE005F5DF5 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		D40B2FD922B533EE005F5DF5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D40B2FDA22B533EE005F5DF5 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D49940E322B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_AppDelegate.swift; sourceTree = "<group>"; };
 		D49940E422B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift; sourceTree = "<group>"; };
 		D49940E522B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +55,9 @@
 		D4CCA0CC22B52E2400FF2F35 = {
 			isa = PBXGroup;
 			children = (
+				D40B2FD822B533EE005F5DF5 /* icon.png */,
+				D40B2FDA22B533EE005F5DF5 /* LICENSE */,
+				D40B2FD922B533EE005F5DF5 /* README.md */,
 				D4CCA0D822B52E2400FF2F35 /* RVS_SwiftUISpinner */,
 				D4CCA0E622B52EA500FF2F35 /* RVS_SwiftUISpinner Test Harness */,
 				D4CCA0D722B52E2400FF2F35 /* Products */,

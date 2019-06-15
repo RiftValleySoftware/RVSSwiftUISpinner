@@ -36,7 +36,7 @@ class RVS_SwiftUISpinner_Test_Harness_SceneDelegate: UIResponder, UIWindowSceneD
 
         // Use a UIHostingController as window root view controller
         let window = UIWindow(frame: UIScreen.main.bounds)
-        window.rootViewController = UIHostingController(rootView: ContentView())
+        window.rootViewController = UIHostingController(rootView: RVS_SwiftUISpinner_Test_Harness_ContentView())
         self.window = window
         window.makeKeyAndVisible()
     }
