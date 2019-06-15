@@ -7,27 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D4A60B8322B444170032367D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A60B8222B444170032367D /* AppDelegate.swift */; };
-		D4A60B8522B444170032367D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A60B8422B444170032367D /* SceneDelegate.swift */; };
-		D4A60B8722B444170032367D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4A60B8622B444170032367D /* ContentView.swift */; };
-		D4A60B8922B444180032367D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A60B8822B444180032367D /* Assets.xcassets */; };
-		D4A60B8C22B444180032367D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4A60B8B22B444180032367D /* Preview Assets.xcassets */; };
-		D4A60B8F22B444180032367D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4A60B8D22B444180032367D /* LaunchScreen.storyboard */; };
+		D49940E622B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49940E322B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift */; };
+		D49940E722B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49940E422B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift */; };
+		D49940E822B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49940E522B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift */; };
+		D4CCA0DB22B52E2400FF2F35 /* RVS_SwiftUISpinner.h in Headers */ = {isa = PBXBuildFile; fileRef = D4CCA0D922B52E2400FF2F35 /* RVS_SwiftUISpinner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D4CCA0EE22B52EA600FF2F35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CCA0ED22B52EA600FF2F35 /* Assets.xcassets */; };
+		D4CCA0F122B52EA600FF2F35 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4CCA0F022B52EA600FF2F35 /* Preview Assets.xcassets */; };
+		D4CCA0F422B52EA600FF2F35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4CCA0F222B52EA600FF2F35 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D4A60B7F22B444170032367D /* RVS_SwiftUISpinner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RVS_SwiftUISpinner.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D4A60B8222B444170032367D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D4A60B8422B444170032367D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D4A60B8622B444170032367D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		D4A60B8822B444180032367D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D4A60B8B22B444180032367D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D4A60B8E22B444180032367D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D4A60B9022B444180032367D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D49940E322B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_AppDelegate.swift; sourceTree = "<group>"; };
+		D49940E422B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift; sourceTree = "<group>"; };
+		D49940E522B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_ContentView.swift; sourceTree = "<group>"; };
+		D4CCA0D622B52E2400FF2F35 /* RVS_SwiftUISpinner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RVS_SwiftUISpinner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CCA0D922B52E2400FF2F35 /* RVS_SwiftUISpinner.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RVS_SwiftUISpinner.h; sourceTree = "<group>"; };
+		D4CCA0DA22B52E2400FF2F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4CCA0E522B52EA500FF2F35 /* RVS_SwiftUISpinner Test Harness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RVS_SwiftUISpinner Test Harness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4CCA0ED22B52EA600FF2F35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D4CCA0F022B52EA600FF2F35 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D4CCA0F322B52EA600FF2F35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D4CCA0F522B52EA600FF2F35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D4CCA0F922B52F5A00FF2F35 /* RVS_SwiftUISpinner Test Harness-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RVS_SwiftUISpinner Test Harness-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		D4A60B7C22B444170032367D /* Frameworks */ = {
+		D4CCA0D322B52E2400FF2F35 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CCA0E222B52EA500FF2F35 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,54 +49,78 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D4A60B7622B444170032367D = {
+		D4CCA0CC22B52E2400FF2F35 = {
 			isa = PBXGroup;
 			children = (
-				D4A60B8122B444170032367D /* RVS_SwiftUISpinner */,
-				D4A60B8022B444170032367D /* Products */,
+				D4CCA0D822B52E2400FF2F35 /* RVS_SwiftUISpinner */,
+				D4CCA0E622B52EA500FF2F35 /* RVS_SwiftUISpinner Test Harness */,
+				D4CCA0D722B52E2400FF2F35 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		D4A60B8022B444170032367D /* Products */ = {
+		D4CCA0D722B52E2400FF2F35 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D4A60B7F22B444170032367D /* RVS_SwiftUISpinner.app */,
+				D4CCA0D622B52E2400FF2F35 /* RVS_SwiftUISpinner.framework */,
+				D4CCA0E522B52EA500FF2F35 /* RVS_SwiftUISpinner Test Harness.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D4A60B8122B444170032367D /* RVS_SwiftUISpinner */ = {
+		D4CCA0D822B52E2400FF2F35 /* RVS_SwiftUISpinner */ = {
 			isa = PBXGroup;
 			children = (
-				D4A60B8222B444170032367D /* AppDelegate.swift */,
-				D4A60B8422B444170032367D /* SceneDelegate.swift */,
-				D4A60B8622B444170032367D /* ContentView.swift */,
-				D4A60B8822B444180032367D /* Assets.xcassets */,
-				D4A60B8D22B444180032367D /* LaunchScreen.storyboard */,
-				D4A60B9022B444180032367D /* Info.plist */,
-				D4A60B8A22B444180032367D /* Preview Content */,
+				D4CCA0D922B52E2400FF2F35 /* RVS_SwiftUISpinner.h */,
+				D4CCA0DA22B52E2400FF2F35 /* Info.plist */,
 			);
 			path = RVS_SwiftUISpinner;
 			sourceTree = "<group>";
 		};
-		D4A60B8A22B444180032367D /* Preview Content */ = {
+		D4CCA0E622B52EA500FF2F35 /* RVS_SwiftUISpinner Test Harness */ = {
 			isa = PBXGroup;
 			children = (
-				D4A60B8B22B444180032367D /* Preview Assets.xcassets */,
+				D49940E322B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift */,
+				D49940E522B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift */,
+				D49940E422B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift */,
+				D4CCA0ED22B52EA600FF2F35 /* Assets.xcassets */,
+				D4CCA0F222B52EA600FF2F35 /* LaunchScreen.storyboard */,
+				D4CCA0F522B52EA600FF2F35 /* Info.plist */,
+				D4CCA0F922B52F5A00FF2F35 /* RVS_SwiftUISpinner Test Harness-Bridging-Header.h */,
+				D4CCA0EF22B52EA600FF2F35 /* Preview Content */,
+			);
+			path = "RVS_SwiftUISpinner Test Harness";
+			sourceTree = "<group>";
+		};
+		D4CCA0EF22B52EA600FF2F35 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D4CCA0F022B52EA600FF2F35 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		D4CCA0D122B52E2400FF2F35 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CCA0DB22B52E2400FF2F35 /* RVS_SwiftUISpinner.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		D4A60B7E22B444170032367D /* RVS_SwiftUISpinner */ = {
+		D4CCA0D522B52E2400FF2F35 /* RVS_SwiftUISpinner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D4A60B9322B444180032367D /* Build configuration list for PBXNativeTarget "RVS_SwiftUISpinner" */;
+			buildConfigurationList = D4CCA0DE22B52E2400FF2F35 /* Build configuration list for PBXNativeTarget "RVS_SwiftUISpinner" */;
 			buildPhases = (
-				D4A60B7B22B444170032367D /* Sources */,
-				D4A60B7C22B444170032367D /* Frameworks */,
-				D4A60B7D22B444170032367D /* Resources */,
+				D4CCA0D122B52E2400FF2F35 /* Headers */,
+				D4CCA0D222B52E2400FF2F35 /* Sources */,
+				D4CCA0D322B52E2400FF2F35 /* Frameworks */,
+				D4CCA0D422B52E2400FF2F35 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -92,25 +128,46 @@
 			);
 			name = RVS_SwiftUISpinner;
 			productName = RVS_SwiftUISpinner;
-			productReference = D4A60B7F22B444170032367D /* RVS_SwiftUISpinner.app */;
+			productReference = D4CCA0D622B52E2400FF2F35 /* RVS_SwiftUISpinner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D4CCA0E422B52EA500FF2F35 /* RVS_SwiftUISpinner Test Harness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4CCA0F622B52EA600FF2F35 /* Build configuration list for PBXNativeTarget "RVS_SwiftUISpinner Test Harness" */;
+			buildPhases = (
+				D4CCA0E122B52EA500FF2F35 /* Sources */,
+				D4CCA0E222B52EA500FF2F35 /* Frameworks */,
+				D4CCA0E322B52EA500FF2F35 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RVS_SwiftUISpinner Test Harness";
+			productName = "RVS_SwiftUISpinner Test Harness";
+			productReference = D4CCA0E522B52EA500FF2F35 /* RVS_SwiftUISpinner Test Harness.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D4A60B7722B444170032367D /* Project object */ = {
+		D4CCA0CD22B52E2400FF2F35 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = "Rift Valley Software, Inc.";
 				TargetAttributes = {
-					D4A60B7E22B444170032367D = {
+					D4CCA0D522B52E2400FF2F35 = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					D4CCA0E422B52EA500FF2F35 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
-			buildConfigurationList = D4A60B7A22B444170032367D /* Build configuration list for PBXProject "RVS_SwiftUISpinner" */;
+			buildConfigurationList = D4CCA0D022B52E2400FF2F35 /* Build configuration list for PBXProject "RVS_SwiftUISpinner" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -118,47 +175,62 @@
 				en,
 				Base,
 			);
-			mainGroup = D4A60B7622B444170032367D;
-			productRefGroup = D4A60B8022B444170032367D /* Products */;
+			mainGroup = D4CCA0CC22B52E2400FF2F35;
+			productRefGroup = D4CCA0D722B52E2400FF2F35 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D4A60B7E22B444170032367D /* RVS_SwiftUISpinner */,
+				D4CCA0D522B52E2400FF2F35 /* RVS_SwiftUISpinner */,
+				D4CCA0E422B52EA500FF2F35 /* RVS_SwiftUISpinner Test Harness */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D4A60B7D22B444170032367D /* Resources */ = {
+		D4CCA0D422B52E2400FF2F35 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A60B8F22B444180032367D /* LaunchScreen.storyboard in Resources */,
-				D4A60B8C22B444180032367D /* Preview Assets.xcassets in Resources */,
-				D4A60B8922B444180032367D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CCA0E322B52EA500FF2F35 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4CCA0F422B52EA600FF2F35 /* LaunchScreen.storyboard in Resources */,
+				D4CCA0F122B52EA600FF2F35 /* Preview Assets.xcassets in Resources */,
+				D4CCA0EE22B52EA600FF2F35 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D4A60B7B22B444170032367D /* Sources */ = {
+		D4CCA0D222B52E2400FF2F35 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D4A60B8322B444170032367D /* AppDelegate.swift in Sources */,
-				D4A60B8522B444170032367D /* SceneDelegate.swift in Sources */,
-				D4A60B8722B444170032367D /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4CCA0E122B52EA500FF2F35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D49940E822B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift in Sources */,
+				D49940E722B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift in Sources */,
+				D49940E622B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D4A60B8D22B444180032367D /* LaunchScreen.storyboard */ = {
+		D4CCA0F222B52EA600FF2F35 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D4A60B8E22B444180032367D /* Base */,
+				D4CCA0F322B52EA600FF2F35 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -166,7 +238,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		D4A60B9122B444180032367D /* Debug */ = {
+		D4CCA0DC22B52E2400FF2F35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -199,6 +271,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -223,10 +296,12 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		D4A60B9222B444180032367D /* Release */ = {
+		D4CCA0DD22B52E2400FF2F35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -259,6 +334,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -277,44 +353,103 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		D4A60B9422B444180032367D /* Debug */ = {
+		D4CCA0DF22B52E2400FF2F35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "RVS_SwiftUISpinner/Preview\\ Content";
+				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KSAUGZFWP2;
-				ENABLE_PREVIEWS = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = RVS_SwiftUISpinner/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "RVS.RVS-SwiftUISpinner";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		D4A60B9522B444180032367D /* Release */ = {
+		D4CCA0E022B52E2400FF2F35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = KSAUGZFWP2;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = RVS_SwiftUISpinner/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "RVS.RVS-SwiftUISpinner";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D4CCA0F722B52EA600FF2F35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "RVS_SwiftUISpinner/Preview\\ Content";
+				DEVELOPMENT_ASSET_PATHS = "\"RVS_SwiftUISpinner Test Harness\"/Preview\\ Content";
 				DEVELOPMENT_TEAM = KSAUGZFWP2;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = RVS_SwiftUISpinner/Info.plist;
+				INFOPLIST_FILE = "RVS_SwiftUISpinner Test Harness/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "RVS.RVS-SwiftUISpinner";
+				PRODUCT_BUNDLE_IDENTIFIER = "RVS.RVS-SwiftUISpinner-Test-Harness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RVS_SwiftUISpinner Test Harness/RVS_SwiftUISpinner Test Harness-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D4CCA0F822B52EA600FF2F35 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"RVS_SwiftUISpinner Test Harness\"/Preview\\ Content";
+				DEVELOPMENT_TEAM = KSAUGZFWP2;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "RVS_SwiftUISpinner Test Harness/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "RVS.RVS-SwiftUISpinner-Test-Harness";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "RVS_SwiftUISpinner Test Harness/RVS_SwiftUISpinner Test Harness-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,25 +458,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D4A60B7A22B444170032367D /* Build configuration list for PBXProject "RVS_SwiftUISpinner" */ = {
+		D4CCA0D022B52E2400FF2F35 /* Build configuration list for PBXProject "RVS_SwiftUISpinner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4A60B9122B444180032367D /* Debug */,
-				D4A60B9222B444180032367D /* Release */,
+				D4CCA0DC22B52E2400FF2F35 /* Debug */,
+				D4CCA0DD22B52E2400FF2F35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D4A60B9322B444180032367D /* Build configuration list for PBXNativeTarget "RVS_SwiftUISpinner" */ = {
+		D4CCA0DE22B52E2400FF2F35 /* Build configuration list for PBXNativeTarget "RVS_SwiftUISpinner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D4A60B9422B444180032367D /* Debug */,
-				D4A60B9522B444180032367D /* Release */,
+				D4CCA0DF22B52E2400FF2F35 /* Debug */,
+				D4CCA0E022B52E2400FF2F35 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4CCA0F622B52EA600FF2F35 /* Build configuration list for PBXNativeTarget "RVS_SwiftUISpinner Test Harness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4CCA0F722B52EA600FF2F35 /* Debug */,
+				D4CCA0F822B52EA600FF2F35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D4A60B7722B444170032367D /* Project object */;
+	rootObject = D4CCA0CD22B52E2400FF2F35 /* Project object */;
 }
