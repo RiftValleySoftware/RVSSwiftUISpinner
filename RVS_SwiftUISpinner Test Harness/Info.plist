@@ -34,7 +34,7 @@
 					<key>UISceneConfigurationName</key>
 					<string>Default Configuration</string>
 					<key>UISceneDelegateClassName</key>
-					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<string>$(PRODUCT_MODULE_NAME).$(PRODUCT_MODULE_NAME)_SceneDelegate</string>
 				</dict>
 			</array>
 		</dict>
