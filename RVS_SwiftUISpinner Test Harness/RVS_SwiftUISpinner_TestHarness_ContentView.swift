@@ -25,7 +25,8 @@ import SwiftUI
 
 struct RVS_SwiftUISpinner_Test_Harness_ContentView: View {
     var body: some View {
-        RVS_SwiftUISpinner()
+        RVS_SwiftUISpinner(items: [])
+            .frame(width: 100, height: 100, alignment: .center)
     }
 }
 
