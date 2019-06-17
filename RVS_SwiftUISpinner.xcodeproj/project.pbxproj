@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D41DFF5322B7D075009B7D45 /* DisplayImages in Resources */ = {isa = PBXBuildFile; fileRef = D41DFF5222B7D075009B7D45 /* DisplayImages */; };
 		D49940E622B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49940E322B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift */; };
 		D49940E722B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49940E422B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift */; };
 		D49940E822B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49940E522B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D41DFF5222B7D075009B7D45 /* DisplayImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DisplayImages; sourceTree = "<group>"; };
 		D49940E322B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_AppDelegate.swift; sourceTree = "<group>"; };
 		D49940E422B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift; sourceTree = "<group>"; };
 		D49940E522B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +89,7 @@
 				D49940E422B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift */,
 				D49940E522B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_ContentView.swift */,
 				D4CCA0ED22B52EA600FF2F35 /* Assets.xcassets */,
+				D41DFF5222B7D075009B7D45 /* DisplayImages */,
 				D4CCA0F222B52EA600FF2F35 /* LaunchScreen.storyboard */,
 				D4CCA0F922B52F5A00FF2F35 /* RVS_SwiftUISpinner Test Harness-Bridging-Header.h */,
 				D4CCA0F522B52EA600FF2F35 /* Info.plist */,
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4CCA0F422B52EA600FF2F35 /* LaunchScreen.storyboard in Resources */,
+				D41DFF5322B7D075009B7D45 /* DisplayImages in Resources */,
 				D4CCA0F122B52EA600FF2F35 /* Preview Assets.xcassets in Resources */,
 				D4CCA0EE22B52EA600FF2F35 /* Assets.xcassets in Resources */,
 			);

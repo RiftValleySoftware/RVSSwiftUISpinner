@@ -25,9 +25,38 @@ import SwiftUI
 
 struct RVS_SwiftUISpinner_Test_Harness_ContentView: View {
     var body: some View {
-        RVS_SwiftUISpinner(items: [])
-            .frame(width: 100, height: 100, alignment: .center)
+    ZStack(alignment: .center) {
+        VStack {
+            Spacer()
+            HStack {
+                Spacer()
+                RVS_SwiftUISpinner(items: [],
+                                   openBackgroundColor: Color.init(red: 1.0,
+                                                                   green: 1.0,
+                                                                   blue: 0.9,
+                                                                   opacity: 1.0
+                                    )
+                    )
+                    .frame(width: 300,
+                           height: 300,
+                           alignment: .center
+                )
+                Spacer()
+            }
+            Spacer()
+        }
     }
+    .frame(minWidth: 0,
+           maxWidth: .infinity,
+           minHeight: 0, maxHeight: .infinity,
+           alignment: Alignment.topLeading
+        )
+    .background(Image("background-gradient")
+        .resizable()
+        .scaledToFill()
+        )
+}
+
 }
 
 #if DEBUG

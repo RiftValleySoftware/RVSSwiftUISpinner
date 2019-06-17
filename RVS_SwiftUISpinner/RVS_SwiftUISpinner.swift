@@ -80,7 +80,7 @@ struct RVS_SwiftUISpinner: View {
     @State var openBackgroundColor: Color = Color.clear
     @State var itemBackgroundColor: Color = Color.clear
     @State var controlBorderColor: Color = Color.red
-    @State var controlBorderLineWidth: CGFloat = 1.0
+    @State var controlBorderLineWidth: CGFloat = 2.0
     @State var itemBorderColor: Color = Color.clear
     @State var textColor: Color = Color.black
     @State var displayMode: DisplayMode = .both
@@ -89,15 +89,17 @@ struct RVS_SwiftUISpinner: View {
     @State var rotationCompensation: Bool = true
     
     var body: some View {
-        HStack {
+        ZStack {
             Circle()
-                .stroke(
-                    controlBorderColor,
-                    style: StrokeStyle(
-                        lineWidth: controlBorderLineWidth
-                    )
-                )
+                .fill(openBackgroundColor)
+//                .stroke(
+//                    controlBorderColor,
+//                    style: StrokeStyle(
+//                        lineWidth: controlBorderLineWidth
+//                    )
+//                )
         }
+        .background(Color.clear)
     }
 }
 
