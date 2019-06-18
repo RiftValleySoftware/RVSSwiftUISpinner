@@ -38,34 +38,61 @@ struct RVS_SwiftUISpinner: View {
 
     /* ################################################################## */
     /**
-     This struct is used to represent one value of the spinner.
+     This class is used to represent one value of the spinner.
      
      It has only one required value: an icon, represented by a UIImage. It can be any size, but you shouldn't need anything bigger than about 100 display units square.
      */
-    public struct DataItem {
+    public final class DataItem: View, Identifiable {
+        public static func == (lhs: RVS_SwiftUISpinner.DataItem, rhs: RVS_SwiftUISpinner.DataItem) -> Bool {
+            return lhs.title == rhs.title && lhs.icon == rhs.icon
+        }
+        
+        struct DataItemDisplay: View {
+            let angle: Angle
+            @State var icon: Image
+            @State var title: Text
+
+            public static func == (lhs: RVS_SwiftUISpinner.DataItem.DataItemDisplay, rhs: RVS_SwiftUISpinner.DataItem.DataItemDisplay) -> Bool {
+                return lhs.title == rhs.title && lhs.icon == rhs.icon
+            }
+            
+            var body: some View {
+                icon
+                    .rotationEffect(angle, anchor: .center)
+            }
+        }
+        
+        /** This is the required image to be displayed for the data item. This is what is most prominently displayed. */
+        public let icon: Image
         /** This is the optional title for the data item. */
         public let title: String
-        /** This is the required image to be displayed for the data item. This is what is most prominently displayed. */
-        public let icon: UIImage
         /** This is an optional description String, which can provide more detailed information about the data item. */
         public let description: String?
-        /** This is any associated data value. It is an optional "Any," and needs to be cast. */
+        /** This is an optional property, containing any associated data value. It needs to be cast. */
         public let value: Any?
+        
+        public var angle: Angle
         
         /* ################################################################## */
         /**
          The default initializer. The only required argument is the icon.
          
-         - parameter inTitle: A String, with the title of this value. This is optional. Default is a blank String.
          - parameter icon: An image to be displayed for the value. This is the only required argument.
+         - parameter inTitle: A String, with the title of this value. This is optional. Default is a blank String.
          - parameter description: An optional String (default is nil), with a description of the value.
          - parameter value: An optional value (default is nil) to be associated with this value item.
          */
-        public init(title inTitle: String = "", icon inIcon: UIImage, description inDescription: String? = nil, value inValue: Any? = nil) {
+        public init(icon inIcon: Image, title inTitle: String = "", description inDescription: String? = nil, value inValue: Any? = nil) {
+            angle = .degrees(0.0)
             title = inTitle
             icon = inIcon
             description = inDescription
             value = inValue
+        }
+        
+        var body: some View {
+            let title = Text("TEST")
+            return DataItemDisplay(angle: .degrees(35.0), icon: icon, title: title)
         }
     }
 
@@ -90,24 +117,17 @@ struct RVS_SwiftUISpinner: View {
     
     var body: some View {
         ZStack {
-            Circle()
-                .fill(openBackgroundColor)
+//            Circle()
+//                .fill(openBackgroundColor)
 //                .stroke(
 //                    controlBorderColor,
 //                    style: StrokeStyle(
 //                        lineWidth: controlBorderLineWidth
 //                    )
 //                )
+        ForEach(0..<items.count) { i in
+            DataItem.DataItemDisplay(angle: .degrees(Double(i) / Double(self.items.count)) * 360.0, icon: self.items[i].icon, title: Text("TEST"))
+            }
         }
-        .background(Color.clear)
     }
 }
-
-#if DEBUG
-struct RVS_SwiftUISpinner_Previews: PreviewProvider {
-    static var previews: some View {
-        RVS_SwiftUISpinner(items: [], openBackgroundColor: Color.init(red: 1.0, green: 1.0, blue: 0.9, opacity: 1.0))
-            .frame(width: 100, height: 100, alignment: .center)
-    }
-}
-#endif

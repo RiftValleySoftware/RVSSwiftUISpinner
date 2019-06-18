@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D4179B2122B7FBEB0072AAC8 /* RVS_SwiftUISpinner_ItemDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4179B2022B7FBEB0072AAC8 /* RVS_SwiftUISpinner_ItemDisplayView.swift */; };
+		D4179B2222B7FBF90072AAC8 /* RVS_SwiftUISpinner_ItemDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4179B2022B7FBEB0072AAC8 /* RVS_SwiftUISpinner_ItemDisplayView.swift */; };
 		D41DFF5322B7D075009B7D45 /* DisplayImages in Resources */ = {isa = PBXBuildFile; fileRef = D41DFF5222B7D075009B7D45 /* DisplayImages */; };
 		D49940E622B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49940E322B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift */; };
 		D49940E722B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D49940E422B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift */; };
@@ -19,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D4179B2022B7FBEB0072AAC8 /* RVS_SwiftUISpinner_ItemDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_ItemDisplayView.swift; sourceTree = "<group>"; };
 		D41DFF5222B7D075009B7D45 /* DisplayImages */ = {isa = PBXFileReference; lastKnownFileType = folder; path = DisplayImages; sourceTree = "<group>"; };
 		D49940E322B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_AppDelegate.swift; sourceTree = "<group>"; };
 		D49940E422B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				D4AC706F22B55B8F00C04559 /* RVS_SwiftUISpinner.swift */,
+				D4179B2022B7FBEB0072AAC8 /* RVS_SwiftUISpinner_ItemDisplayView.swift */,
 				D4CCA0D922B52E2400FF2F35 /* RVS_SwiftUISpinner.h */,
 				D4CCA0DA22B52E2400FF2F35 /* Info.plist */,
 			);
@@ -168,6 +172,7 @@
 				TargetAttributes = {
 					D4CCA0D522B52E2400FF2F35 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					D4CCA0E422B52EA500FF2F35 = {
 						CreatedOnToolsVersion = 11.0;
@@ -259,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4179B2122B7FBEB0072AAC8 /* RVS_SwiftUISpinner_ItemDisplayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +276,7 @@
 				D49940E722B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_SceneDelegate.swift in Sources */,
 				D49940E622B5312C00AE1EA4 /* RVS_SwiftUISpinner_TestHarness_AppDelegate.swift in Sources */,
 				D4AC707022B55B8F00C04559 /* RVS_SwiftUISpinner.swift in Sources */,
+				D4179B2222B7FBF90072AAC8 /* RVS_SwiftUISpinner_ItemDisplayView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +417,7 @@
 		D4CCA0DF22B52E2400FF2F35 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KSAUGZFWP2;
@@ -426,6 +434,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "RVS.RVS-SwiftUISpinner";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -434,6 +443,7 @@
 		D4CCA0E022B52E2400FF2F35 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = KSAUGZFWP2;
