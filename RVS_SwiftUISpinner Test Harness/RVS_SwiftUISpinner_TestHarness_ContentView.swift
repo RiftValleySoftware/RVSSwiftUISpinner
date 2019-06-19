@@ -59,6 +59,7 @@ struct RVS_SwiftUISpinner_Test_Harness_ContentView: View {
     // MARK: -
     /* ################################################################################################################################## */
     private var _directories: [RVS_SwiftUISpinner_Tabbed_Test_Harness_DirElement] = []
+    @State var selectedDirectory: Int = 0
     
     /* ################################################################################################################################## */
     // MARK: -
@@ -86,6 +87,12 @@ struct RVS_SwiftUISpinner_Test_Harness_ContentView: View {
                     Spacer()
                 }
                 Spacer()
+                SegmentedControl(selection: self.$selectedDirectory) {
+                    ForEach(0..<self.directories.count) { index in
+                        Text(self.directories[index].name).tag(index)
+                    }
+                }
+                .padding()
             }
             .padding(.top, 10)
         }
