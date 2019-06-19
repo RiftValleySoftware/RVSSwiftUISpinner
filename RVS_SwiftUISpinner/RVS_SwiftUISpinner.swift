@@ -35,13 +35,13 @@ struct RVS_SwiftUISpinner_ItemDisplayView: View {
             self.itemImage
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .padding()
-            Spacer()
+                .offset(y: -self.size.height)
         }
         .frame(width: self.size.width,
                height: self.size.height,
-               alignment: .center)
-        .scaledToFit()
+               alignment: .bottom)
+            .background(Color(red: 0, green: 1.0, blue: 1.0, opacity: 0.25))
+        .offset(y: -self.size.height / 2.0)
     }
 }
 
@@ -124,9 +124,9 @@ struct RVS_SwiftUISpinner: View {
     @State var items: [DataItem]
     @State var selectedItem: Int = 0
     @State var openBackgroundColor: Color = Color.clear
-    @State var itemBackgroundColor: Color = Color.clear
     @State var controlBorderColor: Color = Color.red
     @State var controlBorderLineWidth: CGFloat = 2.0
+    @State var itemBackgroundColor: Color = Color.yellow
     @State var itemBorderColor: Color = Color.clear
     @State var textColor: Color = Color.black
     @State var displayMode: DisplayMode = .both
@@ -148,15 +148,19 @@ struct RVS_SwiftUISpinner: View {
                         )
                 )
                 
-                ForEach(0..<self.items.count) { i in
-                    RVS_SwiftUISpinner_ItemDisplayView(itemImage: self.items[i].icon,
-                                                       size: CGSize(width: CGFloat.pi * 2.0 * min(proxy.size.width, proxy.size.height) / CGFloat(self.items.count),
-                                                                    height: min(proxy.size.width, proxy.size.height) / 2.0)
-                        )
-                        .rotationEffect(.degrees((Double(i) / Double(self.items.count)) * 360.0), anchor: .center)
+                Group {
+                    ForEach(0..<self.items.count) { i in
+                        RVS_SwiftUISpinner_ItemDisplayView(itemImage: self.items[i].icon,
+                                                           size: CGSize(width: CGFloat.pi * min(proxy.size.width, proxy.size.height) / CGFloat(self.items.count) / 2.0,
+                                                                        height:  min(proxy.size.width, proxy.size.height) / 2.0)
+                            )
+                            .rotationEffect(.degrees((Double(i) / Double(self.items.count)) * 360.0),
+                                            anchor: .center)
+                            .position(CGPoint(x: min(proxy.size.width, proxy.size.height) / 2.0,
+                                              y: min(proxy.size.width, proxy.size.height) / 2.0))
+                    }
                 }
             }
-            .frame(alignment: .center)
         }
     }
 }
