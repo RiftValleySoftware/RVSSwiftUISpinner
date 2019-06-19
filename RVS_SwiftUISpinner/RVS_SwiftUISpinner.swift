@@ -26,6 +26,30 @@ import SwiftUI
 /* ################################################################################################################################## */
 // MARK: -
 /* ################################################################################################################################## */
+struct RVS_SwiftUISpinner_ItemDisplayView: View {
+    @State var itemImage: Image
+    @State var size: CGSize
+    
+    var body: some View {
+        return VStack {
+            self.itemImage
+                .resizable()
+                .aspectRatio(1.0, contentMode: .fit)
+                .background(Color.red)
+                .padding()
+            Spacer()
+            }
+            .frame(width: self.size.width,
+                   height: self.size.height,
+                   alignment: .center)
+            .background(Color.yellow)
+            .scaledToFit()
+    }
+}
+
+/* ################################################################################################################################## */
+// MARK: -
+/* ################################################################################################################################## */
 struct RVS_SwiftUISpinner: View {
     /* ################################################################## */
     /**
@@ -114,17 +138,17 @@ struct RVS_SwiftUISpinner: View {
     
     var body: some View {
         ZStack {
-//            Circle()
+            Circle()
 //                .fill(openBackgroundColor)
 //                .stroke(
 //                    controlBorderColor,
 //                    style: StrokeStyle(
 //                        lineWidth: controlBorderLineWidth
 //                    )
-//                )
-        ForEach(0..<items.count) { i in
-            DataItem.DataItemDisplay(icon: self.items[i].icon, title: Text("TEST"))
-                .rotationEffect(.degrees((Double(i) / Double(self.items.count)) * 360.0), anchor: .bottom)
+//            )
+            ForEach(0..<items.count) { i in
+                RVS_SwiftUISpinner_ItemDisplayView(itemImage: self.items[i].icon, size: CGSize(width: 100, height: 300))
+                    .rotationEffect(.degrees((Double(i) / Double(self.items.count)) * 360.0), anchor: .center)
             }
         }
     }
