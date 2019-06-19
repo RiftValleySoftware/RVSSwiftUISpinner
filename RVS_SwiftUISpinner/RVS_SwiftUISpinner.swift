@@ -36,6 +36,7 @@ struct RVS_SwiftUISpinner_ItemDisplayView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .offset(y: -self.size.height)
+                .frame(alignment: .top)
         }
         .frame(width: self.size.width,
                height: self.size.height,
