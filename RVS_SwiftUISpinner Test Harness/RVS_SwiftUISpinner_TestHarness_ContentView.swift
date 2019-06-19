@@ -72,7 +72,7 @@ struct RVS_SwiftUISpinner_Test_Harness_ContentView: View {
             VStack {
                 Spacer()
                 HStack {
-                    RVS_SwiftUISpinner(items: self._directories[3].items,
+                    RVS_SwiftUISpinner(items: self._directories[2].items,
                                        openBackgroundColor: Color.init(red: 1.0,
                                                                        green: 1.0,
                                                                        blue: 0.9,

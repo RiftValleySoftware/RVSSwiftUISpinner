@@ -26,25 +26,24 @@ import SwiftUI
 /* ################################################################################################################################## */
 // MARK: -
 /* ################################################################################################################################## */
-struct RVS_SwiftUISpinner_ItemDisplayView: View {
-    @State var itemImage: Image
-    @State var size: CGSize
-    
-    var body: some View {
-        return VStack(alignment: .center, spacing: 0) {
-            self.itemImage
-                .resizable()
-                .aspectRatio(contentMode: .fit)
-                .offset(y: -self.size.height)
-                .frame(alignment: .bottom)
+    struct RVS_SwiftUISpinner_ItemDisplayView: View {
+        @State var itemImage: Image
+        @State var size: CGSize
+        
+        var body: some View {
+            return VStack(alignment: .center, spacing: 0) {
+                self.itemImage
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(alignment: .top)
+                    .padding()
+            }
+            .frame(width: self.size.width,
+                   height: self.size.height,
+                   alignment: .top)
+            .offset(y: -self.size.height / 2.0)
         }
-        .frame(width: self.size.width,
-               height: self.size.height,
-               alignment: .bottom)
-            .background(Color(red: 0, green: 1.0, blue: 1.0, opacity: 0.25))
-        .offset(y: -self.size.height / 2.0)
     }
-}
 
 /* ################################################################################################################################## */
 // MARK: -
