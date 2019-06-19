@@ -35,6 +35,10 @@ import SwiftUI
                 self.itemImage
                     .resizable()
                     .aspectRatio(contentMode: .fit)
+                    .padding(.top, 4)
+                    .padding(.leading, 1)
+                    .padding(.trailing, 1)
+                    .padding(.bottom, self.size.height / 2)
             }
             .frame(width: self.size.width,
                    height: self.size.height,
