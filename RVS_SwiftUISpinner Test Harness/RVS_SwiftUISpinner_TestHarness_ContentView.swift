@@ -68,32 +68,33 @@ struct RVS_SwiftUISpinner_Test_Harness_ContentView: View {
     }
     
     var body: some View {
-        let i: [RVS_SwiftUISpinner.DataItem] = _directories[1].items
-        
-        return VStack {
-            Spacer()
-            HStack {
+        GeometryReader { geometry in
+            VStack {
                 Spacer()
-                RVS_SwiftUISpinner(items: i,
-                                   openBackgroundColor: Color.init(red: 1.0,
-                                                                   green: 1.0,
-                                                                   blue: 0.9,
-                                                                   opacity: 1.0
-                                    )
+                HStack {
+                    Spacer()
+                    RVS_SwiftUISpinner(items: self._directories[1].items,
+                                       openBackgroundColor: Color.init(red: 1.0,
+                                                                       green: 1.0,
+                                                                       blue: 0.9,
+                                                                       opacity: 1.0
+                                        )
+                        )
+                        .frame(width: 300,
+                               height: 300,
+                               alignment: .center
                     )
-                    .frame(width: 300,
-                           height: 300,
-                           alignment: .center
-                )
+                    Spacer()
+                }
                 Spacer()
             }
-            Spacer()
+            .frame(width: geometry.size.width, height: geometry.size.height, alignment: .topLeading)
+            .background(Image("background-gradient")
+                .resizable()
+                .scaledToFill()
+            )
+            .edgesIgnoringSafeArea(.all)
         }
-//        .background(Image("background-gradient")
-//            .resizable()
-//            .scaledToFill()
-//        )
-//        .edgesIgnoringSafeArea([.top, .bottom])
     }
     
     /* ################################################################################################################################## */
@@ -126,7 +127,7 @@ struct RVS_SwiftUISpinner_Test_Harness_ContentView: View {
                         if let imageFile = FileManager.default.contents(atPath: "\(i.element.path)/\($0)"), let image = UIImage(data: imageFile) {
                             // The name is the filename, minus the file extension, and minus the numbers in front.
                             let imageName = String($0.prefix($0.count - 4)[$0.index($0.startIndex, offsetBy: 3)...])    // Strip off the sorting number (front), and the file extension.
-                            let item = RVS_SwiftUISpinner.DataItem(icon: Image(uiImage: image), title: imageName)
+                            let item = RVS_SwiftUISpinner.DataItem(angle: .degrees(0), icon: Image(uiImage: image), title: imageName)
                             _directories[i.offset].items.append(item)
                         }
                     }

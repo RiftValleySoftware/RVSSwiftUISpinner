@@ -48,7 +48,6 @@ struct RVS_SwiftUISpinner: View {
         }
         
         struct DataItemDisplay: View {
-            let angle: Angle
             @State var icon: Image
             @State var title: Text
 
@@ -58,7 +57,6 @@ struct RVS_SwiftUISpinner: View {
             
             var body: some View {
                 icon
-                    .rotationEffect(angle, anchor: .center)
             }
         }
         
@@ -82,8 +80,8 @@ struct RVS_SwiftUISpinner: View {
          - parameter description: An optional String (default is nil), with a description of the value.
          - parameter value: An optional value (default is nil) to be associated with this value item.
          */
-        public init(icon inIcon: Image, title inTitle: String = "", description inDescription: String? = nil, value inValue: Any? = nil) {
-            angle = .degrees(0.0)
+        public init(angle inAngle: Angle, icon inIcon: Image, title inTitle: String = "", description inDescription: String? = nil, value inValue: Any? = nil) {
+            angle = inAngle
             title = inTitle
             icon = inIcon
             description = inDescription
@@ -91,8 +89,7 @@ struct RVS_SwiftUISpinner: View {
         }
         
         var body: some View {
-            let title = Text("TEST")
-            return DataItemDisplay(angle: .degrees(35.0), icon: icon, title: title)
+            DataItemDisplay(icon: icon, title: Text("TEST"))
         }
     }
 
@@ -126,7 +123,8 @@ struct RVS_SwiftUISpinner: View {
 //                    )
 //                )
         ForEach(0..<items.count) { i in
-            DataItem.DataItemDisplay(angle: .degrees(Double(i) / Double(self.items.count)) * 360.0, icon: self.items[i].icon, title: Text("TEST"))
+            DataItem.DataItemDisplay(icon: self.items[i].icon, title: Text("TEST"))
+                .rotationEffect(.degrees((Double(i) / Double(self.items.count)) * 360.0), anchor: .bottom)
             }
         }
     }

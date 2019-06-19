@@ -25,19 +25,31 @@ import SwiftUI
 
 struct RVS_SwiftUISpinner_ItemDisplayView: View {
     @State var itemImage: Image
+    @State var size: CGSize
     
     var body: some View {
-        HStack {
-            itemImage
-            .resizable()
+            Group {
+                VStack {
+                    self.itemImage
+                        .resizable()
+                        .aspectRatio(1.0, contentMode: .fit)
+                        .background(Color.red)
+                    .padding()
+                    Spacer()
+                }
+            }
+            .frame(width: self.size.width,
+                   height: self.size.height,
+                   alignment: .center)
+            .background(Color.yellow)
+            .scaledToFit()
         }
-    }
 }
 
 #if DEBUG
 struct RVS_SwiftUISpinner_ItemDisplayView_Previews: PreviewProvider {
     static var previews: some View {
-        RVS_SwiftUISpinner_ItemDisplayView(itemImage: Image(systemName: "star.fill"))
+        RVS_SwiftUISpinner_ItemDisplayView(itemImage: Image(systemName: "star.fill"), size: CGSize(width: 100, height: 300))
     }
 }
 #endif
