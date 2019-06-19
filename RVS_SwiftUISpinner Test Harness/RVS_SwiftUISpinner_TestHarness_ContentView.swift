@@ -70,9 +70,7 @@ struct RVS_SwiftUISpinner_Test_Harness_ContentView: View {
     var body: some View {
         GeometryReader { geometry in
             VStack {
-                Spacer()
                 HStack {
-                    Spacer()
                     RVS_SwiftUISpinner(items: self._directories[1].items,
                                        openBackgroundColor: Color.init(red: 1.0,
                                                                        green: 1.0,
@@ -80,13 +78,11 @@ struct RVS_SwiftUISpinner_Test_Harness_ContentView: View {
                                                                        opacity: 1.0
                                         )
                         )
-                        .frame(width: 300,
-                               height: 300,
+                        .frame(width: min(geometry.size.width, geometry.size.height),
+                               height: min(geometry.size.width, geometry.size.height),
                                alignment: .center
                     )
-                    Spacer()
                 }
-                Spacer()
             }
             .frame(width: geometry.size.width, height: geometry.size.height, alignment: .topLeading)
             .background(Image("background-gradient")

@@ -31,19 +31,17 @@ struct RVS_SwiftUISpinner_ItemDisplayView: View {
     @State var size: CGSize
     
     var body: some View {
-        return VStack {
+        return VStack(alignment: .center, spacing: 0) {
             self.itemImage
                 .resizable()
-                .aspectRatio(1.0, contentMode: .fit)
-                .background(Color.red)
+                .aspectRatio(contentMode: .fit)
                 .padding()
             Spacer()
-            }
-            .frame(width: self.size.width,
-                   height: self.size.height,
-                   alignment: .center)
-            .background(Color.yellow)
-            .scaledToFit()
+        }
+        .frame(width: self.size.width,
+               height: self.size.height,
+               alignment: .center)
+        .scaledToFit()
     }
 }
 
@@ -135,21 +133,30 @@ struct RVS_SwiftUISpinner: View {
     @State var displayModeThreshold: Int = 20
     @State var controlRotationAngleInRadians: Double = 0.0
     @State var rotationCompensation: Bool = true
-    
+
     var body: some View {
-        ZStack {
-            Circle()
-//                .fill(openBackgroundColor)
-//                .stroke(
-//                    controlBorderColor,
-//                    style: StrokeStyle(
-//                        lineWidth: controlBorderLineWidth
-//                    )
-//            )
-            ForEach(0..<items.count) { i in
-                RVS_SwiftUISpinner_ItemDisplayView(itemImage: self.items[i].icon, size: CGSize(width: 100, height: 300))
-                    .rotationEffect(.degrees((Double(i) / Double(self.items.count)) * 360.0), anchor: .center)
+        GeometryReader { proxy in
+            ZStack {
+                Circle()
+                    .fill(self.openBackgroundColor)
+                
+                Circle()
+                    .stroke(
+                        self.controlBorderColor,
+                        style: StrokeStyle(
+                            lineWidth: self.controlBorderLineWidth
+                        )
+                )
+                
+                ForEach(0..<self.items.count) { i in
+                    RVS_SwiftUISpinner_ItemDisplayView(itemImage: self.items[i].icon,
+                                                       size: CGSize(width: CGFloat.pi * 2.0 * min(proxy.size.width, proxy.size.height) / CGFloat(self.items.count),
+                                                                    height: min(proxy.size.width, proxy.size.height) / 2.0)
+                        )
+                        .rotationEffect(.degrees((Double(i) / Double(self.items.count)) * 360.0), anchor: .center)
+                }
             }
+            .frame(alignment: .center)
         }
     }
 }
