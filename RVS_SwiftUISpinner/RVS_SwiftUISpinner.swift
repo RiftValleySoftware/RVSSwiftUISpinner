@@ -36,7 +36,7 @@ struct RVS_SwiftUISpinner_ItemDisplayView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .offset(y: -self.size.height)
-                .frame(alignment: .top)
+                .frame(alignment: .bottom)
         }
         .frame(width: self.size.width,
                height: self.size.height,
@@ -152,7 +152,7 @@ struct RVS_SwiftUISpinner: View {
                 Group {
                     ForEach(0..<self.items.count) { i in
                         RVS_SwiftUISpinner_ItemDisplayView(itemImage: self.items[i].icon,
-                                                           size: CGSize(width: CGFloat.pi * min(proxy.size.width, proxy.size.height) / CGFloat(self.items.count) / 2.0,
+                                                           size: CGSize(width: CGFloat.pi * min(proxy.size.width, proxy.size.height) / CGFloat(self.items.count),
                                                                         height: min(proxy.size.width, proxy.size.height) / 2.0)
                             )
                             .rotationEffect(.degrees((Double(i) / Double(self.items.count)) * 360.0),
