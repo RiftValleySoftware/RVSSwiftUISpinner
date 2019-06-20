@@ -121,6 +121,10 @@ struct RVS_SwiftUISpinner_Test_Harness_ContentView: View {
                                                 )
     
     var body: some View {
+        if selectedItems.isEmpty {
+            selectedItems = self.directories[self.selectedDirectory].items
+        }
+        
         return GeometryReader { geometry in
             VStack {
                 HStack {
