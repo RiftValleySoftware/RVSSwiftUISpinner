@@ -106,20 +106,27 @@ struct RVS_SwiftUISpinner_Test_Harness_ContentView: View {
     /* ################################################################################################################################## */
     // MARK: -
     /* ################################################################################################################################## */
-    let directories: [RVS_SwiftUISpinner_Test_Harness_DirElement]
-    @State var selectedDirectory: Int
-
+    var directories: [RVS_SwiftUISpinner_Test_Harness_DirElement]
+    @State var selectedDirectory: Int = 2 {
+        didSet {
+            selectedItems = self.directories[self.selectedDirectory].items
+        }
+    }
+    @State var selectedItems: [RVS_SwiftUISpinner.DataItem] = []
+    
+    var openBackgroundColor: Color = Color.init(red: 1.0,
+                                                green: 1.0,
+                                                blue: 0.9,
+                                                opacity: 1.0
+                                                )
+    
     var body: some View {
         return GeometryReader { geometry in
             VStack {
                 HStack {
                     Spacer()
-                    RVS_SwiftUISpinner(items: self.directories[self.selectedDirectory].items,
-                                       openBackgroundColor: Color.init(red: 1.0,
-                                                                       green: 1.0,
-                                                                       blue: 0.9,
-                                                                       opacity: 1.0
-                                        )
+                    RVS_SwiftUISpinner(items: self.$selectedItems,
+                                       openBackgroundColor: self.openBackgroundColor
                         )
                         .frame(width: min(geometry.size.width - 20, geometry.size.height - 20),
                                height: min(geometry.size.width - 20, geometry.size.height - 20),
@@ -150,8 +157,9 @@ struct RVS_SwiftUISpinner_Test_Harness_ContentView: View {
  */
 #if DEBUG
 struct RVS_SwiftUISpinner_Test_Harness_ContentView_Previews: PreviewProvider {
+    @State var selectedDir: Int = 2
     static var previews: some View {
-        RVS_SwiftUISpinner_Test_Harness_ContentView(directories: RVS_SwiftUISpinner_Test_Harness_ReadImages(), selectedDirectory: 0)
+        RVS_SwiftUISpinner_Test_Harness_ContentView(directories: RVS_SwiftUISpinner_Test_Harness_ReadImages())
     }
 }
 #endif

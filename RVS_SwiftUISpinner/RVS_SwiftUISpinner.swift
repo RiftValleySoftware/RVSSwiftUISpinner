@@ -66,7 +66,7 @@ struct RVS_SwiftUISpinner: View {
      
      It has only one required value: an icon, represented by a UIImage. It can be any size, but you shouldn't need anything bigger than about 100 display units square.
      */
-    public final class DataItem: View, Identifiable {
+    public struct DataItem: View {
         public static func == (lhs: RVS_SwiftUISpinner.DataItem, rhs: RVS_SwiftUISpinner.DataItem) -> Bool {
             return lhs.title == rhs.title && lhs.icon == rhs.icon
         }
@@ -123,7 +123,7 @@ struct RVS_SwiftUISpinner: View {
     /**
      
      */
-    @State var items: [DataItem]
+    @Binding var items: [DataItem]
     @State var selectedItem: Int = 0
     @State var openBackgroundColor: Color = Color.clear
     @State var controlBorderColor: Color = Color.red
@@ -137,7 +137,7 @@ struct RVS_SwiftUISpinner: View {
     @State var rotationCompensation: Bool = true
 
     var body: some View {
-        GeometryReader { proxy in
+        return GeometryReader { proxy in
             ZStack {
                 Circle()
                     .fill(self.openBackgroundColor)
@@ -150,17 +150,15 @@ struct RVS_SwiftUISpinner: View {
                         )
                 )
                 
-                Group {
-                    ForEach(0..<self.items.count) { i in
-                        ItemDisplayView(itemImage: self.items[i].icon,
-                                                           size: CGSize(width: CGFloat.pi * min(proxy.size.width, proxy.size.height) / CGFloat(self.items.count) * 0.8,
-                                                                        height: min(proxy.size.width, proxy.size.height) / 2.0)
-                            )
-                            .rotationEffect(.degrees((Double(i) / Double(self.items.count)) * 360.0),
-                                            anchor: .center)
-                            .position(CGPoint(x: min(proxy.size.width, proxy.size.height) / 2.0,
-                                              y: min(proxy.size.width, proxy.size.height) / 2.0))
-                    }
+                ForEach(0..<self.items.count) { i in
+                    ItemDisplayView(itemImage: self.items[i].icon,
+                                                       size: CGSize(width: CGFloat.pi * min(proxy.size.width, proxy.size.height) / CGFloat(self.items.count) * 0.8,
+                                                                    height: min(proxy.size.width, proxy.size.height) / 2.0)
+                        )
+                        .rotationEffect(.degrees((Double(i) / Double(self.items.count)) * 360.0),
+                                        anchor: .center)
+                        .position(CGPoint(x: min(proxy.size.width, proxy.size.height) / 2.0,
+                                          y: min(proxy.size.width, proxy.size.height) / 2.0))
                 }
             }
         }
