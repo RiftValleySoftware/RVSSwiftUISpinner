@@ -26,7 +26,11 @@ import SwiftUI
 /* ################################################################################################################################## */
 // MARK: -
 /* ################################################################################################################################## */
-    struct RVS_SwiftUISpinner_ItemDisplayView: View {
+struct RVS_SwiftUISpinner: View {
+    /* ############################################################################################################################## */
+    // MARK: -
+    /* ############################################################################################################################## */
+    struct ItemDisplayView: View {
         @State var itemImage: Image
         @State var size: CGSize
         
@@ -39,18 +43,14 @@ import SwiftUI
                     .padding(.leading, 1)
                     .padding(.trailing, 1)
                     .padding(.bottom, self.size.height / 2)
-            }
-            .frame(width: self.size.width,
-                   height: self.size.height,
-                   alignment: .top)
-            .offset(y: -self.size.height / 2.0)
+                }
+                .frame(width: self.size.width,
+                       height: self.size.height,
+                       alignment: .top)
+                .offset(y: -self.size.height / 2.0)
         }
     }
-
-/* ################################################################################################################################## */
-// MARK: -
-/* ################################################################################################################################## */
-struct RVS_SwiftUISpinner: View {
+    
     /* ################################################################## */
     /**
      */
@@ -152,7 +152,7 @@ struct RVS_SwiftUISpinner: View {
                 
                 Group {
                     ForEach(0..<self.items.count) { i in
-                        RVS_SwiftUISpinner_ItemDisplayView(itemImage: self.items[i].icon,
+                        ItemDisplayView(itemImage: self.items[i].icon,
                                                            size: CGSize(width: CGFloat.pi * min(proxy.size.width, proxy.size.height) / CGFloat(self.items.count) * 0.8,
                                                                         height: min(proxy.size.width, proxy.size.height) / 2.0)
                             )
