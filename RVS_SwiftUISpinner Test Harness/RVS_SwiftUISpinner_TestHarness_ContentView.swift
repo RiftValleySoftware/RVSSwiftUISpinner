@@ -107,7 +107,7 @@ struct RVS_SwiftUISpinner_Test_Harness_ContentView: View {
     // MARK: -
     /* ################################################################################################################################## */
     var directories: [RVS_SwiftUISpinner_Test_Harness_DirElement]
-    @State var selectedDirectory: Int = 2 {
+    @State var selectedDirectory: Int {
         didSet {
             selectedItems = self.directories[self.selectedDirectory].items
         }
@@ -163,7 +163,7 @@ struct RVS_SwiftUISpinner_Test_Harness_ContentView: View {
 struct RVS_SwiftUISpinner_Test_Harness_ContentView_Previews: PreviewProvider {
     @State var selectedDir: Int = 2
     static var previews: some View {
-        RVS_SwiftUISpinner_Test_Harness_ContentView(directories: RVS_SwiftUISpinner_Test_Harness_ReadImages())
+        RVS_SwiftUISpinner_Test_Harness_ContentView(directories: RVS_SwiftUISpinner_Test_Harness_ReadImages(), selectedDirectory: 2)
     }
 }
 #endif
